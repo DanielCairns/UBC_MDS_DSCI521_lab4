@@ -5,6 +5,7 @@ author: "Daniel Cairns"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
+    self_contined: true
     lib_dir: libs
     nature:
       highlightStyle: github
