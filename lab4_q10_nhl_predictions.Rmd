@@ -1,0 +1,49 @@
+---
+title: "NHL Preseason Predictions"
+subtitle: "2022-2023 Season"
+author: "Daniel Cairns"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+
+---
+class: inverse, center, middle
+
+## Opening Night Friday October 7, 2022
+```{r echo=FALSE}
+knitr::include_graphics("https://1000logos.net/wp-content/uploads/2017/05/NHL-Logo.png")
+```
+
+---
+
+### Last Season Standings
+```{r}
+teams <- c("CGY", "EDM", "LAK", "VGK", "VAN", "SJS", "ANA", "SJS")
+points <- c(111, 104, 99, 94, 92, 77, 76, 60)
+barplot(points, names.arg=teams, xlab="Team", ylab="Points")
+```
+
+---
+class: middle
+
+### Top Storylines
+
+1. **Cale Makar** and the Avalanche
+2. Will **Connor McDavid** lift Oilers
+3. When will Canada win again
+4. Meet rookie of the year candidate **Matt Beniers**
+
+---
+class: inverse, middle
+
+## STAY TUNED!
+
+Our predicted champion:  
+```{r}
+print(sample(teams, 1))
+```
